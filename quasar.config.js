@@ -18,13 +18,14 @@ export default defineConfig((ctx) => {
     // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-file#css
     css: [
       'app.scss'
+      // 'font-awesome/css/font-awesome.min.css', // Add this line to include Font Awesome
     ],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
       // 'ionicons-v4',
       // 'mdi-v7',
-      // 'fontawesome-v6',
+      'fontawesome-v6',
       // 'eva-icons',
       // 'themify',
       // 'line-awesome',
@@ -51,7 +52,7 @@ export default defineConfig((ctx) => {
         node: 'node20'
       },
 
-      // rtl: true, // https://quasar.dev/options/rtl-support
+      rtl: true, // https://quasar.dev/options/rtl-support
       // showProgress: false,
       // gzip: true,
       // analyze: true,
@@ -74,11 +75,13 @@ export default defineConfig((ctx) => {
 
     // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-file#framework
     framework: {
-      config: {},
+      config: {
+        // rtl: true, // Enable RTL
+      },
 
       // iconSet: 'material-icons', // Quasar icon set
-      // lang: 'en-US', // Quasar language pack
-
+      // lang: 'fa-IR', // Quasar language pack
+      // rtl : true,
       // For special cases outside of where the auto-import strategy can have an impact
       // (like functional components as one of the examples),
       // you can manually specify Quasar components/directives to be available everywhere:

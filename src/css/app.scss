@@ -1,1 +1,17 @@
 // app global css in SCSS form
+
+.custom-class {
+  direction: rtl; /* Force LTR direction within an RTL page */
+}
+.main{
+    padding-top: 5rem;
+}
+
+.q-drawer {
+    transition: width 0.3s ease;
+  }
+  
+  .q-item {
+    transition: padding-right 0.3s ease; /* Smooth padding transition */
+  }
+
